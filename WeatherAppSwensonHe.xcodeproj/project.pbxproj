@@ -46,7 +46,7 @@
 		F10D752D2940127000207D14 /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752C2940127000207D14 /* RemoteAPI.swift */; };
 		F10D7530294013D700207D14 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752F294013D700207D14 /* Response.swift */; };
 		F10D7533294017E600207D14 /* Publisher+asFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7532294017E600207D14 /* Publisher+asFuture.swift */; };
-		F10D753529401CC000207D14 /* DateFormatter+iso8601Full.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D753429401CC000207D14 /* DateFormatter+iso8601Full.swift */; };
+		F10D753529401CC000207D14 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D753429401CC000207D14 /* DateFormatter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,7 +131,7 @@
 		F10D752C2940127000207D14 /* RemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
 		F10D752F294013D700207D14 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		F10D7532294017E600207D14 /* Publisher+asFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+asFuture.swift"; sourceTree = "<group>"; };
-		F10D753429401CC000207D14 /* DateFormatter+iso8601Full.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso8601Full.swift"; sourceTree = "<group>"; };
+		F10D753429401CC000207D14 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -426,7 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				F10D7532294017E600207D14 /* Publisher+asFuture.swift */,
-				F10D753429401CC000207D14 /* DateFormatter+iso8601Full.swift */,
+				F10D753429401CC000207D14 /* DateFormatter.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -673,7 +673,7 @@
 				F10D751E29400EB300207D14 /* WeatherAPI.swift in Sources */,
 				F10D751B29400E5100207D14 /* ImplWeatherRepository.swift in Sources */,
 				F10D752B2940121900207D14 /* ImplWeatherAPI.swift in Sources */,
-				F10D753529401CC000207D14 /* DateFormatter+iso8601Full.swift in Sources */,
+				F10D753529401CC000207D14 /* DateFormatter.swift in Sources */,
 				F10D751529400A4900207D14 /* CurrentWeatherCondition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
