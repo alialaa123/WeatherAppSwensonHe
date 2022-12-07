@@ -29,6 +29,24 @@
 		F10D7505294003A300207D14 /* NiblessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7504294003A300207D14 /* NiblessView.swift */; };
 		F10D7508294003C000207D14 /* NiblessNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7507294003C000207D14 /* NiblessNavigationController.swift */; };
 		F10D750A294003D400207D14 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7509294003D400207D14 /* NiblessViewController.swift */; };
+		F10D750C2940082B00207D14 /* KeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D750B2940082B00207D14 /* KeyConstants.swift */; };
+		F10D750F294008D100207D14 /* WeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D750E294008D100207D14 /* WeatherRepository.swift */; };
+		F10D75112940093F00207D14 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D75102940093F00207D14 /* WeatherModel.swift */; };
+		F10D75132940099E00207D14 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D75122940099E00207D14 /* Location.swift */; };
+		F10D751529400A4900207D14 /* CurrentWeatherCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D751429400A4900207D14 /* CurrentWeatherCondition.swift */; };
+		F10D751929400CDB00207D14 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D751829400CDB00207D14 /* ErrorMessage.swift */; };
+		F10D751B29400E5100207D14 /* ImplWeatherRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D751A29400E5100207D14 /* ImplWeatherRepository.swift */; };
+		F10D751E29400EB300207D14 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D751D29400EB300207D14 /* WeatherAPI.swift */; };
+		F10D752029400EF900207D14 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D751F29400EF900207D14 /* WeatherService.swift */; };
+		F10D752229400F1200207D14 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F10D752129400F1200207D14 /* Alamofire */; };
+		F10D752529400F8300207D14 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752429400F8300207D14 /* MainService.swift */; };
+		F10D752729400FA000207D14 /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752629400FA000207D14 /* RemoteService.swift */; };
+		F10D752929400FD200207D14 /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752829400FD200207D14 /* RequestConfiguration.swift */; };
+		F10D752B2940121900207D14 /* ImplWeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752A2940121900207D14 /* ImplWeatherAPI.swift */; };
+		F10D752D2940127000207D14 /* RemoteAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752C2940127000207D14 /* RemoteAPI.swift */; };
+		F10D7530294013D700207D14 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752F294013D700207D14 /* Response.swift */; };
+		F10D7533294017E600207D14 /* Publisher+asFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7532294017E600207D14 /* Publisher+asFuture.swift */; };
+		F10D753529401CC000207D14 /* DateFormatter+iso8601Full.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D753429401CC000207D14 /* DateFormatter+iso8601Full.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +115,23 @@
 		F10D7504294003A300207D14 /* NiblessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessView.swift; sourceTree = "<group>"; };
 		F10D7507294003C000207D14 /* NiblessNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessNavigationController.swift; sourceTree = "<group>"; };
 		F10D7509294003D400207D14 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		F10D750B2940082B00207D14 /* KeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstants.swift; sourceTree = "<group>"; };
+		F10D750E294008D100207D14 /* WeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRepository.swift; sourceTree = "<group>"; };
+		F10D75102940093F00207D14 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		F10D75122940099E00207D14 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F10D751429400A4900207D14 /* CurrentWeatherCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeatherCondition.swift; sourceTree = "<group>"; };
+		F10D751829400CDB00207D14 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		F10D751A29400E5100207D14 /* ImplWeatherRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplWeatherRepository.swift; sourceTree = "<group>"; };
+		F10D751D29400EB300207D14 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		F10D751F29400EF900207D14 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		F10D752429400F8300207D14 /* MainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		F10D752629400FA000207D14 /* RemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
+		F10D752829400FD200207D14 /* RequestConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfiguration.swift; sourceTree = "<group>"; };
+		F10D752A2940121900207D14 /* ImplWeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImplWeatherAPI.swift; sourceTree = "<group>"; };
+		F10D752C2940127000207D14 /* RemoteAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteAPI.swift; sourceTree = "<group>"; };
+		F10D752F294013D700207D14 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		F10D7532294017E600207D14 /* Publisher+asFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+asFuture.swift"; sourceTree = "<group>"; };
+		F10D753429401CC000207D14 /* DateFormatter+iso8601Full.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+iso8601Full.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +166,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10D752229400F1200207D14 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +263,9 @@
 		F10D74E5293FFD2D00207D14 /* CoreKit */ = {
 			isa = PBXGroup;
 			children = (
-				F10D74F0293FFD7D00207D14 /* DataLayer */,
+				F10D7531294017C500207D14 /* Extensions */,
 				F10D74EF293FFD5000207D14 /* UILayer */,
+				F10D74F0293FFD7D00207D14 /* DataLayer */,
 				F10D74E6293FFD2D00207D14 /* CoreKit.h */,
 			);
 			path = CoreKit;
@@ -244,10 +281,10 @@
 		F10D74F0293FFD7D00207D14 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
-				F10D74F5293FFDB000207D14 /* Remote */,
+				F10D74F2293FFD9400207D14 /* AppConstants */,
 				F10D74F4293FFDAB00207D14 /* Model */,
 				F10D74F3293FFD9D00207D14 /* Repositories */,
-				F10D74F2293FFD9400207D14 /* AppConstants */,
+				F10D74F5293FFDB000207D14 /* Remote */,
 			);
 			path = DataLayer;
 			sourceTree = "<group>";
@@ -255,6 +292,7 @@
 		F10D74F2293FFD9400207D14 /* AppConstants */ = {
 			isa = PBXGroup;
 			children = (
+				F10D750B2940082B00207D14 /* KeyConstants.swift */,
 			);
 			path = AppConstants;
 			sourceTree = "<group>";
@@ -262,6 +300,8 @@
 		F10D74F3293FFD9D00207D14 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				F10D750E294008D100207D14 /* WeatherRepository.swift */,
+				F10D750D294008A400207D14 /* Implementation */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -269,6 +309,8 @@
 		F10D74F4293FFDAB00207D14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F10D751729400CCE00207D14 /* ErrorMessage */,
+				F10D751629400CC000207D14 /* WeatherModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -276,8 +318,8 @@
 		F10D74F5293FFDB000207D14 /* Remote */ = {
 			isa = PBXGroup;
 			children = (
-				F10D74F7293FFDD300207D14 /* APIs */,
 				F10D74F6293FFDCC00207D14 /* Services */,
+				F10D74F7293FFDD300207D14 /* APIs */,
 			);
 			path = Remote;
 			sourceTree = "<group>";
@@ -285,6 +327,8 @@
 		F10D74F6293FFDCC00207D14 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F10D752329400F6B00207D14 /* MainService */,
+				F10D751F29400EF900207D14 /* WeatherService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -292,6 +336,10 @@
 		F10D74F7293FFDD300207D14 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
+				F10D752E2940127400207D14 /* WeatherAPI */,
+				F10D752C2940127000207D14 /* RemoteAPI.swift */,
+				F10D752829400FD200207D14 /* RequestConfiguration.swift */,
+				F10D752F294013D700207D14 /* Response.swift */,
 			);
 			path = APIs;
 			sourceTree = "<group>";
@@ -320,6 +368,67 @@
 				F10D7509294003D400207D14 /* NiblessViewController.swift */,
 			);
 			path = NiblessView;
+			sourceTree = "<group>";
+		};
+		F10D750D294008A400207D14 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F10D751A29400E5100207D14 /* ImplWeatherRepository.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F10D751629400CC000207D14 /* WeatherModel */ = {
+			isa = PBXGroup;
+			children = (
+				F10D75102940093F00207D14 /* WeatherModel.swift */,
+				F10D75122940099E00207D14 /* Location.swift */,
+				F10D751429400A4900207D14 /* CurrentWeatherCondition.swift */,
+			);
+			path = WeatherModel;
+			sourceTree = "<group>";
+		};
+		F10D751729400CCE00207D14 /* ErrorMessage */ = {
+			isa = PBXGroup;
+			children = (
+				F10D751829400CDB00207D14 /* ErrorMessage.swift */,
+			);
+			path = ErrorMessage;
+			sourceTree = "<group>";
+		};
+		F10D751C29400E9D00207D14 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				F10D752A2940121900207D14 /* ImplWeatherAPI.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		F10D752329400F6B00207D14 /* MainService */ = {
+			isa = PBXGroup;
+			children = (
+				F10D752629400FA000207D14 /* RemoteService.swift */,
+				F10D752429400F8300207D14 /* MainService.swift */,
+			);
+			path = MainService;
+			sourceTree = "<group>";
+		};
+		F10D752E2940127400207D14 /* WeatherAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F10D751D29400EB300207D14 /* WeatherAPI.swift */,
+				F10D751C29400E9D00207D14 /* Implementation */,
+			);
+			path = WeatherAPI;
+			sourceTree = "<group>";
+		};
+		F10D7531294017C500207D14 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F10D7532294017E600207D14 /* Publisher+asFuture.swift */,
+				F10D753429401CC000207D14 /* DateFormatter+iso8601Full.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +531,9 @@
 			dependencies = (
 			);
 			name = CoreKit;
+			packageProductDependencies = (
+				F10D752129400F1200207D14 /* Alamofire */,
+			);
 			productName = CoreKit;
 			productReference = F10D74E4293FFD2D00207D14 /* CoreKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -448,6 +560,7 @@
 					};
 					F10D74E3293FFD2D00207D14 = {
 						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -545,6 +658,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10D750F294008D100207D14 /* WeatherRepository.swift in Sources */,
+				F10D752029400EF900207D14 /* WeatherService.swift in Sources */,
+				F10D75112940093F00207D14 /* WeatherModel.swift in Sources */,
+				F10D752729400FA000207D14 /* RemoteService.swift in Sources */,
+				F10D7530294013D700207D14 /* Response.swift in Sources */,
+				F10D752D2940127000207D14 /* RemoteAPI.swift in Sources */,
+				F10D75132940099E00207D14 /* Location.swift in Sources */,
+				F10D750C2940082B00207D14 /* KeyConstants.swift in Sources */,
+				F10D752929400FD200207D14 /* RequestConfiguration.swift in Sources */,
+				F10D751929400CDB00207D14 /* ErrorMessage.swift in Sources */,
+				F10D752529400F8300207D14 /* MainService.swift in Sources */,
+				F10D7533294017E600207D14 /* Publisher+asFuture.swift in Sources */,
+				F10D751E29400EB300207D14 /* WeatherAPI.swift in Sources */,
+				F10D751B29400E5100207D14 /* ImplWeatherRepository.swift in Sources */,
+				F10D752B2940121900207D14 /* ImplWeatherAPI.swift in Sources */,
+				F10D753529401CC000207D14 /* DateFormatter+iso8601Full.swift in Sources */,
+				F10D751529400A4900207D14 /* CurrentWeatherCondition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +914,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -814,6 +945,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -870,6 +1002,7 @@
 		F10D74ED293FFD2D00207D14 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -880,6 +1013,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -890,6 +1024,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -900,6 +1035,7 @@
 		F10D74EE293FFD2D00207D14 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -910,6 +1046,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1011,6 +1148,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F10D74F8294000E300207D14 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		F10D752129400F1200207D14 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F10D74FB294002ED00207D14 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
