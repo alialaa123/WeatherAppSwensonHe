@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F10D74A5293FF8F600207D14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D74A4293FF8F600207D14 /* AppDelegate.swift */; };
 		F10D74A7293FF8F600207D14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D74A6293FF8F600207D14 /* SceneDelegate.swift */; };
-		F10D74A9293FF8F600207D14 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D74A8293FF8F600207D14 /* ViewController.swift */; };
+		F10D74A9293FF8F600207D14 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D74A8293FF8F600207D14 /* HomeViewController.swift */; };
 		F10D74AC293FF8F600207D14 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10D74AA293FF8F600207D14 /* Main.storyboard */; };
 		F10D74AE293FF8F700207D14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10D74AD293FF8F700207D14 /* Assets.xcassets */; };
 		F10D74B1293FF8F700207D14 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F10D74AF293FF8F700207D14 /* LaunchScreen.storyboard */; };
@@ -47,6 +47,16 @@
 		F10D7530294013D700207D14 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D752F294013D700207D14 /* Response.swift */; };
 		F10D7533294017E600207D14 /* Publisher+asFuture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7532294017E600207D14 /* Publisher+asFuture.swift */; };
 		F10D753529401CC000207D14 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D753429401CC000207D14 /* DateFormatter.swift */; };
+		F10D753729401EA700207D14 /* MainDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D753629401EA700207D14 /* MainDependencyContainer.swift */; };
+		F10D753D294134FE00207D14 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D753C294134FE00207D14 /* HomeView.swift */; };
+		F10D753F2941360500207D14 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D753E2941360500207D14 /* HomeViewModel.swift */; };
+		F10D75422941369B00207D14 /* NavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D75412941369B00207D14 /* NavigationAction.swift */; };
+		F10D7545294137B000207D14 /* HomeRootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7544294137B000207D14 /* HomeRootViewModel.swift */; };
+		F10D75482941380000207D14 /* HomeRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D75472941380000207D14 /* HomeRootViewController.swift */; };
+		F10D754A2941380A00207D14 /* HomeRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D75492941380A00207D14 /* HomeRootView.swift */; };
+		F10D754C29413BEB00207D14 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D754B29413BEB00207D14 /* LocationManager.swift */; };
+		F10D754F294154D700207D14 /* WithConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D754E294154D700207D14 /* WithConfigurable.swift */; };
+		F10D75522941554800207D14 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F10D75512941554800207D14 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,7 +109,7 @@
 		F10D74A1293FF8F600207D14 /* WeatherAppSwensonHe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppSwensonHe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F10D74A4293FF8F600207D14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F10D74A6293FF8F600207D14 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F10D74A8293FF8F600207D14 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F10D74A8293FF8F600207D14 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F10D74AB293FF8F600207D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F10D74AD293FF8F700207D14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F10D74B0293FF8F700207D14 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -132,6 +142,15 @@
 		F10D752F294013D700207D14 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		F10D7532294017E600207D14 /* Publisher+asFuture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+asFuture.swift"; sourceTree = "<group>"; };
 		F10D753429401CC000207D14 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		F10D753629401EA700207D14 /* MainDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainDependencyContainer.swift; sourceTree = "<group>"; };
+		F10D753C294134FE00207D14 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F10D753E2941360500207D14 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		F10D75412941369B00207D14 /* NavigationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAction.swift; sourceTree = "<group>"; };
+		F10D7544294137B000207D14 /* HomeRootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRootViewModel.swift; sourceTree = "<group>"; };
+		F10D75472941380000207D14 /* HomeRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRootViewController.swift; sourceTree = "<group>"; };
+		F10D75492941380A00207D14 /* HomeRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRootView.swift; sourceTree = "<group>"; };
+		F10D754B29413BEB00207D14 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		F10D754E294154D700207D14 /* WithConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithConfigurable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +162,7 @@
 				F10D74FD294002ED00207D14 /* Alamofire in Frameworks */,
 				F10D74EA293FFD2D00207D14 /* CoreKit.framework in Frameworks */,
 				F10D74D6293FFD1100207D14 /* AppUIKit.framework in Frameworks */,
+				F10D75522941554800207D14 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +230,7 @@
 		F10D74B8293FFBD800207D14 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F10D753629401EA700207D14 /* MainDependencyContainer.swift */,
 				F10D74B9293FFC2A00207D14 /* Home */,
 			);
 			path = Modules;
@@ -218,7 +239,8 @@
 		F10D74B9293FFC2A00207D14 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				F10D74A8293FF8F600207D14 /* ViewController.swift */,
+				F10D74A8293FF8F600207D14 /* HomeViewController.swift */,
+				F10D7546294137E900207D14 /* Root */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -274,6 +296,8 @@
 		F10D74EF293FFD5000207D14 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
+				F10D75402941368C00207D14 /* Reusable */,
+				F10D753B294134F200207D14 /* Home */,
 			);
 			path = UILayer;
 			sourceTree = "<group>";
@@ -347,6 +371,7 @@
 		F10D74FE2940030A00207D14 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F10D754D294154AF00207D14 /* Reusable */,
 				F10D7506294003A700207D14 /* NiblessView */,
 				F10D74FF2940032800207D14 /* UIImageView+Kingfisher.swift */,
 			);
@@ -431,6 +456,50 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F10D753B294134F200207D14 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F10D753C294134FE00207D14 /* HomeView.swift */,
+				F10D753E2941360500207D14 /* HomeViewModel.swift */,
+				F10D75432941379E00207D14 /* Root */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F10D75402941368C00207D14 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				F10D75412941369B00207D14 /* NavigationAction.swift */,
+				F10D754B29413BEB00207D14 /* LocationManager.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		F10D75432941379E00207D14 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F10D7544294137B000207D14 /* HomeRootViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F10D7546294137E900207D14 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				F10D75472941380000207D14 /* HomeRootViewController.swift */,
+				F10D75492941380A00207D14 /* HomeRootView.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		F10D754D294154AF00207D14 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				F10D754E294154D700207D14 /* WithConfigurable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -472,6 +541,7 @@
 			packageProductDependencies = (
 				F10D74F9294000E300207D14 /* Kingfisher */,
 				F10D74FC294002ED00207D14 /* Alamofire */,
+				F10D75512941554800207D14 /* SnapKit */,
 			);
 			productName = WeatherAppSwensonHe;
 			productReference = F10D74A1293FF8F600207D14 /* WeatherAppSwensonHe.app */;
@@ -576,6 +646,7 @@
 			packageReferences = (
 				F10D74F8294000E300207D14 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				F10D74FB294002ED00207D14 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F10D75502941554800207D14 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = F10D74A2293FF8F600207D14 /* Products */;
 			projectDirPath = "";
@@ -628,9 +699,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F10D74A9293FF8F600207D14 /* ViewController.swift in Sources */,
+				F10D74A9293FF8F600207D14 /* HomeViewController.swift in Sources */,
 				F10D74A5293FF8F600207D14 /* AppDelegate.swift in Sources */,
 				F10D74A7293FF8F600207D14 /* SceneDelegate.swift in Sources */,
+				F10D753729401EA700207D14 /* MainDependencyContainer.swift in Sources */,
+				F10D75482941380000207D14 /* HomeRootViewController.swift in Sources */,
+				F10D754A2941380A00207D14 /* HomeRootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,6 +716,7 @@
 				F10D7505294003A300207D14 /* NiblessView.swift in Sources */,
 				F10D750A294003D400207D14 /* NiblessViewController.swift in Sources */,
 				F10D75002940032800207D14 /* UIImageView+Kingfisher.swift in Sources */,
+				F10D754F294154D700207D14 /* WithConfigurable.swift in Sources */,
 				F10D74C5293FFD1100207D14 /* AppUIKit.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -658,21 +733,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10D753F2941360500207D14 /* HomeViewModel.swift in Sources */,
 				F10D750F294008D100207D14 /* WeatherRepository.swift in Sources */,
 				F10D752029400EF900207D14 /* WeatherService.swift in Sources */,
+				F10D75422941369B00207D14 /* NavigationAction.swift in Sources */,
 				F10D75112940093F00207D14 /* WeatherModel.swift in Sources */,
 				F10D752729400FA000207D14 /* RemoteService.swift in Sources */,
 				F10D7530294013D700207D14 /* Response.swift in Sources */,
 				F10D752D2940127000207D14 /* RemoteAPI.swift in Sources */,
 				F10D75132940099E00207D14 /* Location.swift in Sources */,
 				F10D750C2940082B00207D14 /* KeyConstants.swift in Sources */,
+				F10D754C29413BEB00207D14 /* LocationManager.swift in Sources */,
 				F10D752929400FD200207D14 /* RequestConfiguration.swift in Sources */,
+				F10D753D294134FE00207D14 /* HomeView.swift in Sources */,
 				F10D751929400CDB00207D14 /* ErrorMessage.swift in Sources */,
 				F10D752529400F8300207D14 /* MainService.swift in Sources */,
 				F10D7533294017E600207D14 /* Publisher+asFuture.swift in Sources */,
 				F10D751E29400EB300207D14 /* WeatherAPI.swift in Sources */,
 				F10D751B29400E5100207D14 /* ImplWeatherRepository.swift in Sources */,
 				F10D752B2940121900207D14 /* ImplWeatherAPI.swift in Sources */,
+				F10D7545294137B000207D14 /* HomeRootViewModel.swift in Sources */,
 				F10D753529401CC000207D14 /* DateFormatter.swift in Sources */,
 				F10D751529400A4900207D14 /* CurrentWeatherCondition.swift in Sources */,
 			);
@@ -848,6 +928,8 @@
 				DEVELOPMENT_TEAM = TNXJLTXXAS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherAppSwensonHe/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather App will need your current location to get your current location weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather App will need your current location to get your current location weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -880,6 +962,8 @@
 				DEVELOPMENT_TEAM = TNXJLTXXAS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WeatherAppSwensonHe/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Weather App will need your current location to get your current location weather";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Weather App will need your current location to get your current location weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -1131,6 +1215,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		F10D75502941554800207D14 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1153,6 +1245,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F10D74FB294002ED00207D14 /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F10D75512941554800207D14 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F10D75502941554800207D14 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

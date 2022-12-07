@@ -17,6 +17,15 @@
         "branch" : "master",
         "revision" : "3e091ee962391a2ddcae5b18e17bc625f9d88d6e"
       }
+    },
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "f222cbdf325885926566172f6f5f06af95473158",
+        "version" : "5.6.0"
+      }
     }
   ],
   "version" : 2

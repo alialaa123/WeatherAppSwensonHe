@@ -11,7 +11,7 @@ import Combine
 public class ImplWeatherRepository: WeatherRepository {
     
     // MARK: - Properties
-    let weatherAPI: WeatherAPI
+    private let weatherAPI: WeatherAPI
     
     // Subscriptions
     var subscription = Set<AnyCancellable>()
