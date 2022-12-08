@@ -28,7 +28,7 @@ extension RemoteAPI {
         return Future { promise in
             session.request(request)
                 .response(completionHandler: { response in
-                    print("DEBUG: request response is:\(request.urlRequest) --> \(String(data: response.data ?? Data(), encoding: .utf8))")
+//                    print("DEBUG: request response is:\(request.urlRequest) --> \(String(data: response.data ?? Data(), encoding: .utf8))")
                     if response.response?.statusCode == 401 {
                         print("DEBUG: API KEY not provided")
                     }

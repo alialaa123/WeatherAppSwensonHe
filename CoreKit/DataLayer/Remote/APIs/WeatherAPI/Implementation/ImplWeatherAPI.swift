@@ -18,4 +18,8 @@ public class ImplWeatherAPI: WeatherAPI {
         request(WeatherService.getWeatherForecast(days: days, cityName: cityName))
     }
     
+    public func getSearchCountries(query: String) -> Future<[Country], ErrorMessage> {
+        request(WeatherService.getSearchedCountries(query: query))
+    }
+    
 }

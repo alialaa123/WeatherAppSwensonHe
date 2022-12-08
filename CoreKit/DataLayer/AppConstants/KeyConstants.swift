@@ -17,5 +17,6 @@ final class KeyConstants {
     
     // MARK: - Properties
     private(set) var WEATHER_KEY = "a27e6d308e564456abd221722220612"
+    private(set) var UPDATE_CITY = "updateCity"
     
 }

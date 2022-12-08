@@ -27,4 +27,10 @@ public class ImplWeatherRepository: WeatherRepository {
             .compactMap { return $0 }
             .asFuture()
     }
+    
+    public func getCountry(query: String) -> Future<[Country], ErrorMessage> {
+        return self.weatherAPI.getSearchCountries(query: query)
+            .compactMap { $0 }
+            .asFuture()
+    }
 }

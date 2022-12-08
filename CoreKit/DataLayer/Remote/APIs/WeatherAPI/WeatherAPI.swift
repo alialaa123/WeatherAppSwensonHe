@@ -10,4 +10,5 @@ import Combine
 
 public protocol WeatherAPI: RemoteAPI {
     func getWeather(days: Int, cityName: String) ->Future<WeatherModel, ErrorMessage>
+    func getSearchCountries(query: String) ->Future<[Country], ErrorMessage>
 }

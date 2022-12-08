@@ -59,6 +59,16 @@
 		F10D75522941554800207D14 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F10D75512941554800207D14 /* SnapKit */; };
 		F10D755429416AA900207D14 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D755329416AA900207D14 /* Forecast.swift */; };
 		F10D75562941724300207D14 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D75552941724300207D14 /* Date+Extension.swift */; };
+		F10D7559294178CA00207D14 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7558294178CA00207D14 /* SearchViewController.swift */; };
+		F10D755B294178D400207D14 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D755A294178D400207D14 /* SearchView.swift */; };
+		F10D755D29417C4D00207D14 /* NiblessBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D755C29417C4D00207D14 /* NiblessBottomSheetViewController.swift */; };
+		F10D755F29417D0400207D14 /* UIPanGestureRecognizer+Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D755E29417D0400207D14 /* UIPanGestureRecognizer+Direction.swift */; };
+		F10D7562294188D700207D14 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D7561294188D700207D14 /* Country.swift */; };
+		F10D75642941899900207D14 /* MainSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D75632941899900207D14 /* MainSection.swift */; };
+		F10D756629418BEA00207D14 /* UIViewController+ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D756529418BEA00207D14 /* UIViewController+ErrorMessage.swift */; };
+		F10D756829418C6900207D14 /* UIViewController+ErrorPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D756729418C6900207D14 /* UIViewController+ErrorPresentation.swift */; };
+		F10D756B29418D4B00207D14 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D756A29418D4B00207D14 /* SearchViewModel.swift */; };
+		F10D756E29419DBE00207D14 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F10D756D29419DBE00207D14 /* CombineCocoa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +165,15 @@
 		F10D754E294154D700207D14 /* WithConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithConfigurable.swift; sourceTree = "<group>"; };
 		F10D755329416AA900207D14 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		F10D75552941724300207D14 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F10D7558294178CA00207D14 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		F10D755A294178D400207D14 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		F10D755C29417C4D00207D14 /* NiblessBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessBottomSheetViewController.swift; sourceTree = "<group>"; };
+		F10D755E29417D0400207D14 /* UIPanGestureRecognizer+Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIPanGestureRecognizer+Direction.swift"; sourceTree = "<group>"; };
+		F10D7561294188D700207D14 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		F10D75632941899900207D14 /* MainSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSection.swift; sourceTree = "<group>"; };
+		F10D756529418BEA00207D14 /* UIViewController+ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorMessage.swift"; sourceTree = "<group>"; };
+		F10D756729418C6900207D14 /* UIViewController+ErrorPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ErrorPresentation.swift"; sourceTree = "<group>"; };
+		F10D756A29418D4B00207D14 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +185,7 @@
 				F10D74FD294002ED00207D14 /* Alamofire in Frameworks */,
 				F10D74EA293FFD2D00207D14 /* CoreKit.framework in Frameworks */,
 				F10D74D6293FFD1100207D14 /* AppUIKit.framework in Frameworks */,
+				F10D756E29419DBE00207D14 /* CombineCocoa in Frameworks */,
 				F10D75522941554800207D14 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +265,7 @@
 			children = (
 				F10D74A8293FF8F600207D14 /* HomeViewController.swift */,
 				F10D7546294137E900207D14 /* Root */,
+				F10D7557294178B100207D14 /* SearchView */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -337,8 +358,11 @@
 		F10D74F4293FFDAB00207D14 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F10D7560294188BE00207D14 /* Country */,
 				F10D751729400CCE00207D14 /* ErrorMessage */,
 				F10D751629400CC000207D14 /* WeatherModel */,
+				F10D75632941899900207D14 /* MainSection.swift */,
+				F10D756729418C6900207D14 /* UIViewController+ErrorPresentation.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -377,8 +401,6 @@
 			children = (
 				F10D754D294154AF00207D14 /* Reusable */,
 				F10D7506294003A700207D14 /* NiblessView */,
-				F10D74FF2940032800207D14 /* UIImageView+Kingfisher.swift */,
-				F10D75552941724300207D14 /* Date+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -396,6 +418,7 @@
 				F10D7504294003A300207D14 /* NiblessView.swift */,
 				F10D7507294003C000207D14 /* NiblessNavigationController.swift */,
 				F10D7509294003D400207D14 /* NiblessViewController.swift */,
+				F10D755C29417C4D00207D14 /* NiblessBottomSheetViewController.swift */,
 			);
 			path = NiblessView;
 			sourceTree = "<group>";
@@ -468,6 +491,7 @@
 				F10D753C294134FE00207D14 /* HomeView.swift */,
 				F10D753E2941360500207D14 /* HomeViewModel.swift */,
 				F10D75432941379E00207D14 /* Root */,
+				F10D756929418D3900207D14 /* Search */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -502,8 +526,37 @@
 			isa = PBXGroup;
 			children = (
 				F10D754E294154D700207D14 /* WithConfigurable.swift */,
+				F10D755E29417D0400207D14 /* UIPanGestureRecognizer+Direction.swift */,
+				F10D756529418BEA00207D14 /* UIViewController+ErrorMessage.swift */,
+				F10D74FF2940032800207D14 /* UIImageView+Kingfisher.swift */,
+				F10D75552941724300207D14 /* Date+Extension.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		F10D7557294178B100207D14 /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				F10D7558294178CA00207D14 /* SearchViewController.swift */,
+				F10D755A294178D400207D14 /* SearchView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		F10D7560294188BE00207D14 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				F10D7561294188D700207D14 /* Country.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		F10D756929418D3900207D14 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F10D756A29418D4B00207D14 /* SearchViewModel.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -548,6 +601,7 @@
 				F10D74F9294000E300207D14 /* Kingfisher */,
 				F10D74FC294002ED00207D14 /* Alamofire */,
 				F10D75512941554800207D14 /* SnapKit */,
+				F10D756D29419DBE00207D14 /* CombineCocoa */,
 			);
 			productName = WeatherAppSwensonHe;
 			productReference = F10D74A1293FF8F600207D14 /* WeatherAppSwensonHe.app */;
@@ -653,6 +707,7 @@
 				F10D74F8294000E300207D14 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				F10D74FB294002ED00207D14 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				F10D75502941554800207D14 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				F10D756C29419DBE00207D14 /* XCRemoteSwiftPackageReference "CombineCocoa" */,
 			);
 			productRefGroup = F10D74A2293FF8F600207D14 /* Products */;
 			projectDirPath = "";
@@ -706,8 +761,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F10D74A9293FF8F600207D14 /* HomeViewController.swift in Sources */,
+				F10D7559294178CA00207D14 /* SearchViewController.swift in Sources */,
 				F10D74A5293FF8F600207D14 /* AppDelegate.swift in Sources */,
 				F10D74A7293FF8F600207D14 /* SceneDelegate.swift in Sources */,
+				F10D755B294178D400207D14 /* SearchView.swift in Sources */,
 				F10D753729401EA700207D14 /* MainDependencyContainer.swift in Sources */,
 				F10D75482941380000207D14 /* HomeRootViewController.swift in Sources */,
 				F10D754A2941380A00207D14 /* HomeRootView.swift in Sources */,
@@ -718,13 +775,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10D755D29417C4D00207D14 /* NiblessBottomSheetViewController.swift in Sources */,
 				F10D7508294003C000207D14 /* NiblessNavigationController.swift in Sources */,
 				F10D7505294003A300207D14 /* NiblessView.swift in Sources */,
 				F10D750A294003D400207D14 /* NiblessViewController.swift in Sources */,
 				F10D75002940032800207D14 /* UIImageView+Kingfisher.swift in Sources */,
 				F10D75562941724300207D14 /* Date+Extension.swift in Sources */,
 				F10D754F294154D700207D14 /* WithConfigurable.swift in Sources */,
+				F10D756629418BEA00207D14 /* UIViewController+ErrorMessage.swift in Sources */,
 				F10D74C5293FFD1100207D14 /* AppUIKit.docc in Sources */,
+				F10D755F29417D0400207D14 /* UIPanGestureRecognizer+Direction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,14 +813,18 @@
 				F10D754C29413BEB00207D14 /* LocationManager.swift in Sources */,
 				F10D752929400FD200207D14 /* RequestConfiguration.swift in Sources */,
 				F10D753D294134FE00207D14 /* HomeView.swift in Sources */,
+				F10D75642941899900207D14 /* MainSection.swift in Sources */,
 				F10D755429416AA900207D14 /* Forecast.swift in Sources */,
+				F10D756829418C6900207D14 /* UIViewController+ErrorPresentation.swift in Sources */,
 				F10D751929400CDB00207D14 /* ErrorMessage.swift in Sources */,
 				F10D752529400F8300207D14 /* MainService.swift in Sources */,
 				F10D7533294017E600207D14 /* Publisher+asFuture.swift in Sources */,
 				F10D751E29400EB300207D14 /* WeatherAPI.swift in Sources */,
 				F10D751B29400E5100207D14 /* ImplWeatherRepository.swift in Sources */,
 				F10D752B2940121900207D14 /* ImplWeatherAPI.swift in Sources */,
+				F10D7562294188D700207D14 /* Country.swift in Sources */,
 				F10D7545294137B000207D14 /* HomeRootViewModel.swift in Sources */,
+				F10D756B29418D4B00207D14 /* SearchViewModel.swift in Sources */,
 				F10D753529401CC000207D14 /* DateFormatter.swift in Sources */,
 				F10D751529400A4900207D14 /* CurrentWeatherCondition.swift in Sources */,
 			);
@@ -1231,6 +1295,14 @@
 				minimumVersion = 5.0.0;
 			};
 		};
+		F10D756C29419DBE00207D14 /* XCRemoteSwiftPackageReference "CombineCocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CombineCommunity/CombineCocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1258,6 +1330,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F10D75502941554800207D14 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		F10D756D29419DBE00207D14 /* CombineCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F10D756C29419DBE00207D14 /* XCRemoteSwiftPackageReference "CombineCocoa" */;
+			productName = CombineCocoa;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -32,8 +32,14 @@ class MainDependencyContainer {
     
     // MARK: - Methods
     public func makeHomeViewController() -> HomeViewController {
+        
+        let searchViewControllerFactory = { () -> SearchViewController in
+            return self.makeSearchViewController()
+        }
+        
         return HomeViewController(viewModel: sharedHomeViewModel,
-                                  rootViewController: makeHomeRootViewController())
+                                  rootViewController: makeHomeRootViewController(),
+                                  searchViewControllerFactory: searchViewControllerFactory)
     }
     
     // MARK: - Home Root view controller
@@ -44,11 +50,21 @@ class MainDependencyContainer {
     
     private func makeHomeRootViewModel() -> HomeRootViewModel {
         return HomeRootViewModel(repository: makeWeatherRepository(),
-                                 locationManager: sharedLocationManager)
+                                 locationManager: sharedLocationManager,
+                                 navigateToSearch: sharedHomeViewModel)
     }
     
     private func makeWeatherRepository() -> WeatherRepository {
         return ImplWeatherRepository(weatherAPI: ImplWeatherAPI())
+    }
+    
+    // MARK: - Search view controller
+    private func makeSearchViewController() -> SearchViewController {
+        return SearchViewController(customView: SearchView(), viewModel: makeSearchViewModel())
+    }
+    
+    private func makeSearchViewModel() -> SearchViewModel {
+        return SearchViewModel(repository: makeWeatherRepository())
     }
     
     

@@ -16,9 +16,15 @@ public final class HomeRootViewModel {
     @Published public private(set) var userLocation = ""
     
     // Subjects
-    private let erroMessageSubject = PassthroughSubject<ErrorMessage, Never>()
+    public let errorPresentation = PassthroughSubject<ErrorPresentation?, Never>()
+    private let errorMessageSubject = PassthroughSubject<ErrorMessage, Never>()
     public var errorMessage: AnyPublisher<ErrorMessage, Never> {
-        erroMessageSubject.eraseToAnyPublisher()
+        errorMessageSubject.eraseToAnyPublisher()
+    }
+    
+    private let errorMessageSubjectss = PassthroughSubject<String, Never>()
+    public var errorMessagess: AnyPublisher<String, Never> {
+        errorMessageSubjectss.eraseToAnyPublisher()
     }
     
     private let forecastWeatherDataSubject = PassthroughSubject<WeatherModel, Never>()
@@ -31,12 +37,18 @@ public final class HomeRootViewModel {
     var locationManager: LocationManager
     
     private let repository: WeatherRepository
+    private let navigateToSearch: navigateToSearchCountry
     
     // MARK: - Life cycle
-    public init(repository: WeatherRepository, locationManager: LocationManager) {
+    public init(repository: WeatherRepository,
+                locationManager: LocationManager,
+                navigateToSearch: navigateToSearchCountry) {
         self.repository = repository
         self.locationManager = locationManager
+        self.navigateToSearch = navigateToSearch
+        
         getUserCurrentLocation()
+        subscribeToUpdateCitySelectedNotification()
     }
     
     // MARK: - Methods
@@ -67,14 +79,31 @@ public final class HomeRootViewModel {
                 case .finished: break
                 case .failure(let error):
                     print("DEBUG: error happen now with: \(error)")
-                    strongSelf.erroMessageSubject.send(error)
+                    strongSelf.errorMessageSubject.send(error)
                 }
             } receiveValue: { [weak self] in
                 guard let strongSelf = self else { return }
                 strongSelf.forecastWeatherDataSubject.send($0)
-                print("DEBUG: weather forecast back with data: \($0.current?.tempC)")
             }
             .store(in: &subscriptions)
     }
-
+    
+    // MARK: - Selectors
+    @objc
+    public func gotoSearchView() {
+        navigateToSearch.goToSearchCountry()
+    }
+    
+    // MARK: - Listening to city search
+    private func subscribeToUpdateCitySelectedNotification() {
+        NotificationCenter.default.publisher(
+            for: Notification.Name(KeyConstants.shared.UPDATE_CITY),
+            object: nil)
+            .sink { [weak self] in
+                guard let strongSelf = self, let city = $0.object as? String else { return }
+                DispatchQueue.global().asyncAfter(deadline: .now() + 0.5) {
+                    strongSelf.getForecastWeather(cityName: city)
+                }
+            }.store(in: &subscriptions)
+    }
 }

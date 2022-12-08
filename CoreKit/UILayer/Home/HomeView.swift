@@ -17,7 +17,7 @@ public enum HomeView: Equatable {
     public func hidesNavigationBar() -> Bool {
         switch self {
         case .root: return true
-        case .searchForCountry: return false
+        case .searchForCountry: return true
         }
     }
 }

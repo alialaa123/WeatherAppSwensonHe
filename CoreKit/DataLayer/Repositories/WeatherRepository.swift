@@ -10,4 +10,5 @@ import Combine
 
 public protocol WeatherRepository {
     func getWeatherForecast(days: Int, cityName: String) -> Future<WeatherModel, ErrorMessage>
+    func getCountry(query: String) -> Future<[Country], ErrorMessage>
 }

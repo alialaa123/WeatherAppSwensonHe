@@ -34,6 +34,8 @@ class HomeRootViewController: NiblessViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        customView.searchButton.addTarget(viewModel, action: #selector(HomeRootViewModel.gotoSearchView), for: .touchUpInside)
+//        observeErrorMessages()
         bindCountryField(to: viewModel.forecastWeatherData)
         bindCurrentTempField(to: viewModel.forecastWeatherData)
         bindCurrentWeatherDescriptionField(to: viewModel.forecastWeatherData)
@@ -52,7 +54,7 @@ class HomeRootViewController: NiblessViewController {
     private func bindCountryField(to publisher: AnyPublisher<WeatherModel, Never>) {
         publisher
             .receive(on: DispatchQueue.main)
-            .map { $0.location?.country }
+            .map { $0.location?.name }
             .assign(to: \.text, on: customView.cityNameLabel)
             .store(in: &subscriptions)
     }
@@ -174,6 +176,15 @@ class HomeRootViewController: NiblessViewController {
         dateFormatter.dateStyle = .none
         customView.timeLabel.text = "\(dateFormatter.string(from: currentTime))"
     }
-
+    
+    func observeErrorMessages() {
+        viewModel.errorMessage
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] errorMessage in
+                guard let strongSelf = self else { return }
+                strongSelf.present(errorMessage: errorMessage,
+                                   withPresentationState: strongSelf.viewModel.errorPresentation)
+            }.store(in: &subscriptions)
+    }
     
 }

@@ -17,17 +17,20 @@ class HomeViewController: NiblessNavigationController {
     
     // Child ViewControllers
     let rootViewController: HomeRootViewController
+    var searchViewController: SearchViewController?
     
-    
+    let makeSearchViewControllerFactory: (() -> SearchViewController)
     
     // state
     var subscriptions = Set<AnyCancellable>()
     
     // MARK: - Life cycle
     init(viewModel: HomeViewModel,
-         rootViewController: HomeRootViewController) {
+         rootViewController: HomeRootViewController,
+         searchViewControllerFactory: @escaping (() -> SearchViewController)) {
         self.viewModel = viewModel
         self.rootViewController = rootViewController
+        self.makeSearchViewControllerFactory = searchViewControllerFactory
         
         super.init()
         self.delegate = self
@@ -65,7 +68,7 @@ class HomeViewController: NiblessNavigationController {
         case .root:
             presentHomeRoot()
         case .searchForCountry:
-            print("DEBUG: user tapped to search view controller")
+            presentSearchView()
         }
     }
     
@@ -73,6 +76,10 @@ class HomeViewController: NiblessNavigationController {
     // MARK: - Methods to call views
     private func presentHomeRoot() {
         popToRootViewController(animated: true)
+    }
+    
+    private func presentSearchView() {
+        present(makeSearchViewControllerFactory(), animated: true)
     }
     
 }
@@ -130,8 +137,9 @@ extension HomeViewController {
     func homeView(associatedWith viewController: UIViewController) -> HomeView? {
         switch viewController {
         case is HomeRootViewController: return .root
+        case is SearchViewController: return .searchForCountry
         default:
-//          assertionFailure("Encountered unexpected child view controller type in OnboardingViewController")
+//          assertionFailure("")
             return nil
         }
     }

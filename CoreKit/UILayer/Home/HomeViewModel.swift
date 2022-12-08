@@ -20,6 +20,7 @@ public final class HomeViewModel: navigateToSearchCountry {
     
     // MARK: - Methods
     public func uiPresented(view: HomeView) {
+        print("DEBUG: view is now: \(view)")
         navigationAction = .presented(view: view)
     }
     
