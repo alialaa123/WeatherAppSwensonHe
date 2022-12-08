@@ -57,6 +57,8 @@
 		F10D754C29413BEB00207D14 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D754B29413BEB00207D14 /* LocationManager.swift */; };
 		F10D754F294154D700207D14 /* WithConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D754E294154D700207D14 /* WithConfigurable.swift */; };
 		F10D75522941554800207D14 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F10D75512941554800207D14 /* SnapKit */; };
+		F10D755429416AA900207D14 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D755329416AA900207D14 /* Forecast.swift */; };
+		F10D75562941724300207D14 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10D75552941724300207D14 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +153,8 @@
 		F10D75492941380A00207D14 /* HomeRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRootView.swift; sourceTree = "<group>"; };
 		F10D754B29413BEB00207D14 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		F10D754E294154D700207D14 /* WithConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithConfigurable.swift; sourceTree = "<group>"; };
+		F10D755329416AA900207D14 /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		F10D75552941724300207D14 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -374,6 +378,7 @@
 				F10D754D294154AF00207D14 /* Reusable */,
 				F10D7506294003A700207D14 /* NiblessView */,
 				F10D74FF2940032800207D14 /* UIImageView+Kingfisher.swift */,
+				F10D75552941724300207D14 /* Date+Extension.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -409,6 +414,7 @@
 				F10D75102940093F00207D14 /* WeatherModel.swift */,
 				F10D75122940099E00207D14 /* Location.swift */,
 				F10D751429400A4900207D14 /* CurrentWeatherCondition.swift */,
+				F10D755329416AA900207D14 /* Forecast.swift */,
 			);
 			path = WeatherModel;
 			sourceTree = "<group>";
@@ -716,6 +722,7 @@
 				F10D7505294003A300207D14 /* NiblessView.swift in Sources */,
 				F10D750A294003D400207D14 /* NiblessViewController.swift in Sources */,
 				F10D75002940032800207D14 /* UIImageView+Kingfisher.swift in Sources */,
+				F10D75562941724300207D14 /* Date+Extension.swift in Sources */,
 				F10D754F294154D700207D14 /* WithConfigurable.swift in Sources */,
 				F10D74C5293FFD1100207D14 /* AppUIKit.docc in Sources */,
 			);
@@ -746,6 +753,7 @@
 				F10D754C29413BEB00207D14 /* LocationManager.swift in Sources */,
 				F10D752929400FD200207D14 /* RequestConfiguration.swift in Sources */,
 				F10D753D294134FE00207D14 /* HomeView.swift in Sources */,
+				F10D755429416AA900207D14 /* Forecast.swift in Sources */,
 				F10D751929400CDB00207D14 /* ErrorMessage.swift in Sources */,
 				F10D752529400F8300207D14 /* MainService.swift in Sources */,
 				F10D7533294017E600207D14 /* Publisher+asFuture.swift in Sources */,

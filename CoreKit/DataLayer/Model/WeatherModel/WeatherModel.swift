@@ -11,8 +11,9 @@ public struct WeatherModel: Codable {
     
     public let location: Location?
     public let current: CurrentWeatherCondition?
+    public let forecast: Forecast?
     
     enum CodingKeys: String, CodingKey {
-        case location, current
+        case location, current, forecast
     }
 }

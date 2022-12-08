@@ -25,12 +25,15 @@ public struct CurrentWeatherCondition: Codable {
     public let windInMph: Double?
     public let windInKph: Double?
     public let humidity: Double?
+    public let avgtempC, avgtempF: Double?
     
     enum CodingKeys: String, CodingKey {
         case tempC = "temp_c"
         case tempF = "temp_f"
         case windInMph = "wind_mph"
         case windInKph = "wind_kph"
+        case avgtempC = "avgtemp_c"
+        case avgtempF = "avgtemp_f"
         case condition, humidity
     }
 }
